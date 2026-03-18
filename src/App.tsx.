@@ -1,0 +1,9 @@
+export default function App() {
+  return (
+    <div style={{ padding: '50px', textAlign: 'center', fontFamily: 'sans-serif' }}>
+      <h1 style={{ color: '#2e7d32' }}>🌱 Agrosmart est en ligne !</h1>
+      <p>Votre configuration est maintenant correcte.</p>
+    </div>
+  )
+}
+
