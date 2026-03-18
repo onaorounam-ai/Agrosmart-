@@ -1,9 +1,52 @@
 export default function App() {
   return (
-    <div style={{ padding: '50px', textAlign: 'center', fontFamily: 'sans-serif' }}>
-      <h1 style={{ color: '#2e7d32' }}>🌱 Agrosmart est en ligne !</h1>
-      <p>Votre configuration est maintenant correcte.</p>
+    <div className="min-h-screen bg-emerald-50 font-sans">
+      {/* Barre de navigation */}
+      <nav className="bg-emerald-700 text-white p-4 shadow-lg">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold flex items-center gap-2">
+            🌱 Agrosmart
+          </h1>
+          <ul className="flex gap-4 text-sm">
+            <li className="hover:underline cursor-pointer">Accueil</li>
+            <li className="hover:underline cursor-pointer">Analyses</li>
+            <li className="hover:underline cursor-pointer">Conseils</li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Contenu principal */}
+      <main className="container mx-auto p-6 text-center">
+        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-emerald-100">
+          <h2 className="text-3xl font-extrabold text-emerald-800 mb-4">
+            Bienvenue sur votre Agrisavoir
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Expertise agronomique assistée par IA pour optimiser vos rendements et vos formations professionnelles.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+              <span className="text-2xl">📊</span>
+              <h3 className="font-bold text-emerald-900">Analyses de Sol</h3>
+              <p className="text-xs text-gray-500">Détails des nutriments en temps réel.</p>
+            </div>
+            <div className="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+              <span className="text-2xl">🌾</span>
+              <h3 className="font-bold text-emerald-900">Recommandations</h3>
+              <p className="text-xs text-gray-500">Prédisez la culture idéale pour votre terrain.</p>
+            </div>
+          </div>
+
+          <button className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full transition-all shadow-md">
+            Lancer un diagnostic
+          </button>
+        </div>
+
+        <p className="mt-8 text-xs text-gray-400 italic">
+          Modèle théorique pour l'aide à la décision agricole.
+        </p>
+      </main>
     </div>
   )
 }
-
